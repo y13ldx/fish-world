@@ -1,1 +1,112 @@
-local _0x1a2b3c4d=loadstring(game:HttpGet("https://raw.githubusercontent.com/0x1337/obf/main/lib.lua"))()local _0x5e6f7g8h=_0x1a2b3c4d.o({loadstring(game:HttpGet("https://pastebin.com/raw/abc123"))()})local _0x9i0j1k2l=game:GetService("ReplicatedStorage").client.Modules.RemoteEventClientlocal _0x3m4n5o6p=Vector3.new(0,0,0)local _0x7q8r9s0t=10local _0x1u2v3w4x=0.2local _0x5y6z7a8b=false local _0x9c0d1e2f=false local function _0x3g4h5i6j()if not _0x5y6z7a8b or _0x9c0d1e2f then return end _0x9c0d1e2f=true for _0x7k8l9m0n=1,_0x7q8r9s0t do if not _0x5y6z7a8b then break end local _0x1o2p3q4r=(_0x3m4n5o6p,_0x3m4n5o6p,9e9,false)_0x1a2b3c4d.f(_0x3g4h5i6j,_0x9i0j1k2l:GetRemoteEvent(_0x1a2b3c4d.g("Um9kVGhyb3c=")):dispatch:FireServer(_0x1o2p3q4r))_0x1a2b3c4d.f(_0x3g4h5i6j,_0x9i0j1k2l:GetRemoteEvent(_0x1a2b3c4d.g("RW5kU3RydWdnbGU=")):dispatch:FireServer({true,_0x3m4n5o6p}))task.wait()end _0x9c0d1e2f=false end local _0x5t6u7v8w=Instance.new("ScreenGui")_0x5t6u7v8w.Name=_0x1a2b3c4d.g("RHVwZVRvZ2dsZQ==")_0x5t6u7v8w.ResetOnSpawn=false _0x5t6u7v8w.Parent=game:GetService("CoreGui")local _0x9x0y1z2a=Instance.new("Frame")_0x9x0y1z2a.Size=UDim2.new(0,105,0,40)_0x9x0y1z2a.Position=UDim2.new(0,10,0,10)_0x9x0y1z2a.BackgroundColor3=Color3.fromRGB(30,30,30)_0x9x0y1z2a.BorderSizePixel=0 _0x9x0y1z2a.BackgroundTransparency=0.3 _0x9x0y1z2a.Parent=_0x5t6u7v8w local _0x3b4c5d6e=false local _0x7f8g9h0i local _0x1j2k3l4m local _0x5n6o7p8q _0x9x0y1z2a.InputBegan:Connect(function(_0x9r0s1t2u)if _0x9r0s1t2u.UserInputType==Enum.UserInputType.MouseButton1 or _0x9r0s1t2u.UserInputType==Enum.UserInputType.Touch then _0x3b4c5d6e=true _0x1j2k3l4m=_0x9r0s1t2u.Position _0x5n6o7p8q=_0x9x0y1z2a.Position _0x9r0s1t2u.Changed:Connect(function()if _0x9r0s1t2u.UserInputState==Enum.UserInputState.End then _0x3b4c5d6e=false end end)end end)_0x9x0y1z2a.InputChanged:Connect(function(_0x9v0w1x2y)if _0x9v0w1x2y.UserInputType==Enum.UserInputType.MouseMovement or _0x9v0w1x2y.UserInputType==Enum.UserInputType.Touch then _0x7f8g9h0i=_0x9v0w1x2y end end)game:GetService("UserInputService").InputChanged:Connect(function(_0x3z4a5b6c)if _0x3b4c5d6e and(_0x3z4a5b6c.UserInputType==Enum.UserInputType.MouseMovement or _0x3z4a5b6c.UserInputType==Enum.UserInputType.Touch)then local _0x7d8e9f0g=_0x3z4a5b6c.Position-_0x1j2k3l4m _0x9x0y1z2a.Position=UDim2.new(_0x5n6o7p8q.X.Scale,_0x5n6o7p8q.X.Offset+_0x7d8e9f0g.X,_0x5n6o7p8q.Y.Scale,_0x5n6o7p8q.Y.Offset+_0x7d8e9f0g.Y)end end)local _0x1h2i3j4k=Instance.new("TextLabel")_0x1h2i3j4k.Size=UDim2.new(1,-45,1,0)_0x1h2i3j4k.Position=UDim2.new(0,0,0,0)_0x1h2i3j4k.BackgroundTransparency=1 _0x1h2i3j4k.Text=_0x1a2b3c4d.g("YnkgWVlMREs=")_0x1h2i3j4k.TextColor3=Color3.fromRGB(255,0,0)_0x1h2i3j4k.TextScaled=true _0x1h2i3j4k.Font=Enum.Font.GothamBold _0x1h2i3j4k.Parent=_0x9x0y1z2a local _0x5l6m7n8o=game:GetService("TweenService")local _0x9p0q1r2s=0 spawn(function()while true do _0x9p0q1r2s=_0x9p0q1r2s+2 if _0x9p0q1r2s>=360 then _0x9p0q1r2s=0 end local _0x3t4u5v6w=Color3.fromHSV(_0x9p0q1r2s/360,1,1)_0x1h2i3j4k.TextColor3=_0x3t4u5v6w task.wait(0.05)end end)local _0x7x8y9z0a=Instance.new("TextButton")_0x7x8y9z0a.Size=UDim2.new(0,36,0,18)_0x7x8y9z0a.Position=UDim2.new(1,-40,0.5,-9)_0x7x8y9z0a.BackgroundColor3=Color3.fromRGB(80,80,80)_0x7x8y9z0a.BorderSizePixel=0 _0x7x8y9z0a.Text="" _0x7x8y9z0a.Parent=_0x9x0y1z2a local _0x1b2c3d4e=Instance.new("Frame")_0x1b2c3d4e.Size=UDim2.new(0,16,0,16)_0x1b2c3d4e.Position=UDim2.new(0,1,0.5,-8)_0x1b2c3d4e.BackgroundColor3=Color3.fromRGB(200,200,200)_0x1b2c3d4e.BorderSizePixel=0 _0x1b2c3d4e.Parent=_0x7x8y9z0a local _0x5f6g7h8i=Instance.new("UICorner")_0x5f6g7h8i.CornerRadius=UDim.new(0,9)_0x5f6g7h8i.Parent=_0x7x8y9z0a local _0x9j0k1l2m=Instance.new("UICorner")_0x9j0k1l2m.CornerRadius=UDim.new(0,8)_0x9j0k1l2m.Parent=_0x1b2c3d4e _0x7x8y9z0a.MouseButton1Click:Connect(function()_0x5y6z7a8b=not _0x5y6z7a8b if _0x5y6z7a8b then _0x7x8y9z0a.BackgroundColor3=Color3.fromRGB(0,170,255)_0x1b2c3d4e.Position=UDim2.new(1,-17,0.5,-8)game.StarterGui:SetCore("SendNotification",{Title=_0x1a2b3c4d.g("aW5zdGFudCBmaXNoaW5n");Text=_0x1a2b3c4d.g("T04=");Duration=1})spawn(function()while _0x5y6z7a8b do _0x3g4h5i6j()task.wait(_0x1u2v3w4x)end end)else _0x7x8y9z0a.BackgroundColor3=Color3.fromRGB(80,80,80)_0x1b2c3d4e.Position=UDim2.new(0,1,0.5,-8)game.StarterGui:SetCore("SendNotification",{Title=_0x1a2b3c4d.g("aW5zdGFudCBmaXNoaW5n");Text=_0x1a2b3c4d.g("T0ZGIQ==");Duration=1})end end)game.StarterGui:SetCore("SendNotification",{Title=_0x1a2b3c4d.g("aW5zdGFudCBmaXNoaW5n");Text=_0x1a2b3c4d.g("YnkgWVlMREs=");Duration=3})print(_0x1a2b3c4d.g("bG9s"))
+local _0x1=require(game:GetService("ReplicatedStorage").client.Modules.RemoteEventClient)local _0x2=Vector3.zero
+local _0x3=10 local _0x4=0.2
+local _0x5=false
+local _0x6=false
+local function _0x7()
+if not _0x5 or _0x6 then return end
+_0x6=true
+for _0x8=1,_0x3 do
+if not _0x5 then break end
+_0x1:GetRemoteEvent("RodThrow").dispatch:FireServer({_0x2,_0x2,9e9,false})
+_0x1:GetRemoteEvent("EndStruggle").dispatch:FireServer({true,_0x2})
+task.wait()
+end
+_0x6=false
+end
+local _0x9=Instance.new("ScreenGui")
+_0x9.Name="DupeToggle"
+_0x9.ResetOnSpawn=false
+_0x9.Parent=game:GetService("CoreGui")
+local _0xa=Instance.new("Frame")
+_0xa.Size=UDim2.new(0,105,0,40)
+_0xa.Position=UDim2.new(0,10,0,10)
+_0xa.BackgroundColor3=Color3.fromRGB(30,30,30)
+_0xa.BorderSizePixel=0
+_0xa.BackgroundTransparency=0.3
+_0xa.Parent=_0x9
+local _0xb=false
+local _0xc
+local _0xd
+local _0xe
+_0xa.InputBegan:Connect(function(_0xf)
+if _0xf.UserInputType==Enum.UserInputType.MouseButton1 or _0xf.UserInputType==Enum.UserInputType.Touch then
+_0xb=true
+_0xd=_0xf.Position
+_0xe=_0xa.Position
+_0xf.Changed:Connect(function()
+if _0xf.UserInputState==Enum.UserInputState.End then
+_0xb=false
+end
+end)
+end
+end)
+_0xa.InputChanged:Connect(function(_0xf)
+if _0xf.UserInputType==Enum.UserInputType.MouseMovement or _0xf.UserInputType==Enum.UserInputType.Touch then
+_0xc=_0xf
+end
+end)
+game:GetService("UserInputService").InputChanged:Connect(function(_0xf)
+if _0xb and(_0xf.UserInputType==Enum.UserInputType.MouseMovement or _0xf.UserInputType==Enum.UserInputType.Touch)then
+local _0x10=_0xf.Position-_0xd
+_0xa.Position=UDim2.new(_0xe.X.Scale,_0xe.X.Offset+_0x10.X,_0xe.Y.Scale,_0xe.Y.Offset+_0x10.Y)
+end
+end)
+local _0x11=Instance.new("TextLabel")
+_0x11.Size=UDim2.new(1,-45,1,0)
+_0x11.Position=UDim2.new(0,0,0,0)
+_0x11.BackgroundTransparency=1
+_0x11.Text="by y13ldx"
+_0x11.TextColor3=Color3.fromRGB(255,0,0)
+_0x11.TextScaled=true
+_0x11.Font=Enum.Font.GothamBold
+_0x11.Parent=_0xa
+local _0x12=game:GetService("TweenService")
+local _0x13=0
+spawn(function()
+while true do
+_0x13=_0x13+2
+if _0x13>=360 then _0x13=0 end
+local _0x14=Color3.fromHSV(_0x13/360,1,1)
+_0x11.TextColor3=_0x14
+task.wait(0.05)
+end
+end)
+local _0x15=Instance.new("TextButton")
+_0x15.Size=UDim2.new(0,36,0,18)
+_0x15.Position=UDim2.new(1,-40,0.5,-9)
+_0x15.BackgroundColor3=Color3.fromRGB(80,80,80)
+_0x15.BorderSizePixel=0
+_0x15.Text=""
+_0x15.Parent=_0xa
+local _0x16=Instance.new("Frame")
+_0x16.Size=UDim2.new(0,16,0,16)
+_0x16.Position=UDim2.new(0,1,0.5,-8)
+_0x16.BackgroundColor3=Color3.fromRGB(200,200,200)
+_0x16.BorderSizePixel=0
+_0x16.Parent=_0x15
+local _0x17=Instance.new("UICorner")
+_0x17.CornerRadius=UDim.new(0,9)
+_0x17.Parent=_0x15
+local _0x18=Instance.new("UICorner")
+_0x18.CornerRadius=UDim.new(0,8)
+_0x18.Parent=_0x16
+_0x15.MouseButton1Click:Connect(function()
+_0x5=not _0x5
+if _0x5 then
+_0x15.BackgroundColor3=Color3.fromRGB(0,170,255)
+_0x16.Position=UDim2.new(1,-17,0.5,-8)
+game.StarterGui:SetCore("SendNotification",{Title="instant fishing";Text="ON";Duration=1;})
+spawn(function()
+while _0x5 do
+_0x7()
+task.wait(_0x4)
+end
+end)
+else
+_0x15.BackgroundColor3=Color3.fromRGB(80,80,80)
+_0x16.Position=UDim2.new(0,1,0.5,-8)
+game.StarterGui:SetCore("SendNotification",{Title="instant fishing";Text="OFF";Duration=1;})
+end
+end)
+game.StarterGui:SetCore("SendNotification",{Title="instant fishing";Text="by y13ldx";Duration=3;})
+print("lol")
